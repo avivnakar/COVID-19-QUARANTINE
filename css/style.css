@@ -1,0 +1,121 @@
+
+*{
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    list-style: none;
+}
+body{
+    background-color: black;
+}
+.board{
+    cursor: pointer;
+}
+
+table{margin: auto;}
+.hall-of-fame td{
+    border-style: groove;
+}
+.hall-of-fame {
+    margin-top: 60px;
+    border-collapse: collapse;
+}
+.hall-of-fame td{
+    padding: 3px 6px;
+}
+
+
+.lives{color: red;font-size: xx-large;}
+.dashboard{
+    height:75px;
+    color: gray;
+    background-color: #fff;
+    display: none;
+}
+.cell{
+    background-color:darkgray;
+    width: 30px;
+    height: 30px;
+}
+.cell.hidden{
+    background-color:lightskyblue;
+}
+.cell.infected{background-color: red;}
+.cell.no1{color:blue;}
+.cell.no2{color:green; }
+.cell.no3{color:red;}
+.cell.no4{color:darkblue;}
+.cell.no5{color:darkred;}
+.cell.no6{color:teal;}
+.cell.no7{color:black;}
+.cell.no8{color:silver;}
+.cell.hidden:hover{background-color:goldenrod;}
+.quarantined{
+    height: 90%;
+    width: 90%;
+    /* padding-bottom: 1px; */
+    margin  : 0;
+    cursor: pointer;
+    font-weight: 1000;
+    font-size: 110%;
+    color: black;
+    background:radial-gradient(yellow,yellow,orange,red    );
+    text-align: center;
+    border-radius: 50%;
+    border: 1px black solid;
+}
+
+.smiley{
+    cursor: pointer;
+    font-size: xx-large;
+}
+.levelbtn{
+    background-color: gray;
+    display: inline-block;
+        border: solid;
+        margin-right: 10px;
+        border-radius: 3px;
+}
+.love{
+    display: none;
+}
+.hint{
+    border: 2px solid white;    
+    cursor: help;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 3px;
+    border-radius: 3.5px;
+
+}
+.hint.hidden{
+    color: black;
+    background-color: white;
+    border: black;
+}
+img.virus{
+    height: 83%;
+    background:radial-gradient(rgb(0, 255, 255),  rgb(62, 224, 208),rgba(62, 224, 208, 0.13),red);
+    color: turquoise;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.header{
+    margin-top: 30px;
+    height: 150px;
+    background-image: url("../img/background2.jpg");
+    background-size: contain;
+    background-position: center;
+}
+
+.modal{
+    border-radius: 3px;
+    border: dotted;
+    float: right;
+    flex-direction: column;
+    width: 200px;
+    margin: 0px 50px 0px -350px;
+    display: none;
+    /* TOP RGHT  */
+}

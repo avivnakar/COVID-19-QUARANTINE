@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Corona Sweeper</title>
+</head>
+
+<body onload="initGame()">
+    <div class="header">
+        <h1>COVID-19 QUARANTINE</h1>
+        <h1 class="gameover"></h1>
+        <p>locate the infected areas to help the healhcare system</p>
+    </div>
+    <div class="smiley" onclick="smileyClicked()">🙂</div>
+    <div class="lives">❤❤❤</div>
+    <div class="modal">you have 3 lives left </div>
+    <table class="board">
+        <tr>
+            <td>
+                <div class="score"></div>
+                <div class="dashboard">0</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tbody class="mat"></tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div class="footer">
+        <ul>
+            <li title="Easy" class="levelbtn" onclick="setLevel(EASY)">🇸🇬 Singapore</li>
+            <li title="Medium" class="levelbtn" onclick="setLevel(MEDIUM)">🇧🇪 Belgium</li>
+            <li title="Expert" class="levelbtn" onclick="setLevel(EXPERT)">🇮🇹 Italy</li>
+        </ul>
+        <div class="hint" onclick="toggleHintMode(this)">hint</div>
+
+        <table class="hall-of-fame">
+            <tbody class="hall-of-fame"></tbody>
+        </table>
+
+
+        <script src="js/utils.js"></script>
+        <script src="js/globals.js"></script>
+        <script src="js/render.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/uut.js"></script>
+        <!-- <script src="js/mines.js"></script> -->
+        <!-- inline styling was set just in case of error with loading the CSS file -->
+        <div class="love" style="display: none;">This is the element of love. Even thouh you might not see it sometimes,
+            you
+            deserve to feel it.</div>
+</body>
+
+</html>
